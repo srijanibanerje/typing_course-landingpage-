@@ -1,0 +1,293 @@
+.background{
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.yellow{
+    color: #ffb345;
+}
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.btn {
+    width: 300px;
+    padding: 15px;
+    background: linear-gradient(45deg, #fe9863, #fd3293);
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+.questioncontainer {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: 2px solid #e4a950;
+    width: 70%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.heading {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.heading span {
+    color: #e4a950; /* Gold color */
+}
+.subheading {
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.questions {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    gap: 15px;
+}
+.question-box {
+    background-color: #fdf8dd;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+.question-box input {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+/* facts should know */
+.factbody {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, rgb(10, 41, 49), #0a081f);
+    color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.factcontainer {
+    text-align: center;
+    width: 80%;
+    /* background: linear-gradient(to bottom, #00203FFF, #A29BFE); */
+    color: white;
+    margin: 0;
+    
+}
+
+
+/* Heading */
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Grid container */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Individual card */
+.card {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+
+/* Hover Effect */
+.card:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/* end */
+.coursebody {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, rgb(204, 211, 219), #e8e6e8);
+    color: rgb(0, 0, 0);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.coursecontainer {
+    text-align: center;
+    width: 80%;
+    /* background: linear-gradient(to bottom, #00203FFF, #A29BFE); */
+    color: rgb(0, 0, 0);
+    margin: 0;
+    
+}
+.card_button{
+    background: linear-gradient(45deg, #fe9863, #fd3293);
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 10px;
+}
+.card_button:hover {
+    color: black;
+    transform: scale(1.05);
+}
+.text_col{
+    font-size: 20px;
+    font-weight: 600;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+/* for mobile view */
+@media (max-width: 768px) {
+    .background {
+        /* background: #0e0e0e; */
+        padding: 20px;
+    }
+    h1, h2, h3 {
+        font-size: clamp(1rem, 2vw, 2rem); /* Responsive font sizes */
+        text-align: center;
+    }
+    .button-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .button-container button {
+        width: 100%;
+        max-width: 300px;
+    }
+    .video-container {
+        display: flex;
+        justify-content: center;
+    }
+    iframe {
+        max-width: 100%;
+        /* height: auto; */
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 10px;
+        padding: 20px;
+    }
+    .factbody {
+        padding: 20px;
+    }
+    .questioncontainer {
+        width: 90%;
+        max-width: 500px;
+    }
+    .text_col {
+        padding: 10px;
+        font-size: 1rem;
+    }
+    .question-container {
+        background-color: #fff3d4;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        width: 90%;
+        max-width: 400px;
+        text-align: center;
+    }
+    .heading {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #333;
+    }
+    .subheading {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #ff8800;
+    }
+    .question-box-container {
+        max-height: 250px; /* Enables scrolling */
+        overflow-y: auto;
+        padding: 10px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    .question-box {
+        display: flex;
+        align-items: center;
+        background-color: #fff8e5;
+        padding: 0px;
+        border-radius: 5px;
+        margin-bottom: 8px;
+        font-size: 0.95rem;
+    }
+    .question{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 75vh;
+    }
+    .question-box input {
+        margin-right: 10px;
+    }
+    .button-container button {
+        width: 287px !important;
+        max-width: 400px;
+        background-color: #ff5722;
+        color: white;
+        font-size: 1rem;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    .card{
+        font-size: 15px;
+        padding: 5px;
+    }
+    
+}
