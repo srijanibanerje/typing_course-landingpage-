@@ -1,5 +1,5 @@
 .background{
-    background-image: url("../images/bg.jpg");
+    background-image: url("../Images/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -17,6 +17,7 @@ body{
     gap: 15px;
 }
 .btn {
+    position: relative;
     width: 300px;
     padding: 15px;
     background: linear-gradient(45deg, #fe9863, #fd3293);
@@ -30,6 +31,27 @@ body{
 }
 .btn:hover {
     background-color: #0056b3;
+}
+.btn::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    /* left: -50%; */
+    width: 25px;
+    height: 85%;
+    background: linear-gradient(0deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+    transition: 0.1s;
+    /* transform: rotate(20deg); */
+    animation: shine 1s infinite linear;
+}
+
+@keyframes shine {
+    0% {
+        left: -2%;
+    }
+    100% {
+        left: 88%;
+    }
 }
 .questioncontainer {
     background-color: white;
@@ -86,7 +108,7 @@ body{
 
 .factcontainer {
     text-align: center;
-    width: 80%;
+    width: 100%;
     /* background: linear-gradient(to bottom, #00203FFF, #A29BFE); */
     color: white;
     margin: 0;
@@ -184,6 +206,9 @@ h1 {
     border-radius: 20px;
     margin-bottom: 10px;
 }
+.shining-button{
+
+}
 /* for mobile view */
 @media (max-width: 768px) {
     .background {
@@ -214,7 +239,7 @@ h1 {
     }
     .grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
         gap: 10px;
         padding: 20px;
     }
@@ -226,8 +251,8 @@ h1 {
         max-width: 500px;
     }
     .text_col {
-        padding: 10px;
-        font-size: 1rem;
+        padding: 24px;
+        font-size: 1.2rem;
     }
     .question-container {
         background-color: #fff3d4;
@@ -269,7 +294,7 @@ h1 {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 75vh;
+        height: 78vh;
     }
     .question-box input {
         margin-right: 10px;
@@ -286,7 +311,7 @@ h1 {
         margin-top: 10px;
     }
     .card{
-        font-size: 15px;
+        font-size: 19px;
         padding: 5px;
     }
     
