@@ -121,6 +121,9 @@ h1 {
     font-size: 40px;
     font-weight: bold;
 }
+p{
+    font-size: 19px; 
+}
 
 /* Grid container */
 .grid {
@@ -206,11 +209,75 @@ h1 {
     border-radius: 20px;
     margin-bottom: 10px;
 }
-.shining-button{
-
+.custom-card {
+    border-radius: 20px;
+            padding: 60px 20px 30px; /* Extra padding to avoid content shifting */
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            position: relative;
+           
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
 }
+.bg-gradient-dark {
+    background: linear-gradient(to bottom, #0B2C49, #E3A400);
+}
+.bg-gradient-light {
+    background: linear-gradient(to bottom, #E3A400, #0B2C49);
+}
+.custom-card img {
+    width: 140px; /* Adjust size */
+    position: absolute;
+    top: -40px; /* Move image above card */
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    background: white;
+    /* overflow: hidden; */
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.btn-custom {
+    background-color: #FFC107;
+    /* color: black; */
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+}
+.strike {
+    text-decoration: line-through;
+    color: red;
+    font-weight: normal;
+}
+
 /* for mobile view */
 @media (max-width: 768px) {
+    .btn-custom {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .custom-card {
+        
+                padding: 70% 10px 20px; /* Extra padding to avoid content shifting */
+                
+    }
+    .custom-card img {
+        width: 81%; /* Adjust size */
+        position: absolute;
+        top: -40px; /* Move image above card */
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 10px;
+        /* background: white; */
+        padding: 10px;
+        /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); */
+    }
     .background {
         /* background: #0e0e0e; */
         padding: 20px;
@@ -285,7 +352,7 @@ h1 {
         display: flex;
         align-items: center;
         background-color: #fff8e5;
-        padding: 0px;
+        padding: 3px;
         border-radius: 5px;
         margin-bottom: 8px;
         font-size: 0.95rem;
@@ -304,7 +371,7 @@ h1 {
         max-width: 400px;
         background-color: #ff5722;
         color: white;
-        font-size: 1rem;
+        font-size: 1.2rem;
         border: none;
         padding: 10px;
         border-radius: 10px;
@@ -314,5 +381,6 @@ h1 {
         font-size: 19px;
         padding: 5px;
     }
+    
     
 }
