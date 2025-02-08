@@ -408,6 +408,12 @@ p{
     .accordion-body{
         font-size: 19px;
     }
+    .testimonial-text p{
+        text-align: justify;
+    }
+    .video-wrapper iframe{
+        height: 285px;
+    }
     
     
 }
