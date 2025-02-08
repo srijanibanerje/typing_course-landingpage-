@@ -5,8 +5,7 @@
     
 }
 body{
-    padding: 0;
-    margin: 0;
+    overflow-x: hidden;
 }
 .yellow{
     color: #ffb345;
@@ -211,7 +210,7 @@ p{
 }
 .custom-card {
     border-radius: 20px;
-            padding: 60px 20px 30px; /* Extra padding to avoid content shifting */
+    padding: 30px 10px 20px; /* Extra padding to avoid content shifting */
             text-align: center;
             color: white;
             font-weight: bold;
@@ -258,6 +257,13 @@ p{
 
 /* for mobile view */
 @media (max-width: 768px) {
+    * {
+        box-sizing: border-box;
+    }
+    
+    .container {
+        overflow-x: hidden;
+    }
     .btn-custom {
         font-size: 20px;
         font-weight: 700;
@@ -268,7 +274,7 @@ p{
                 
     }
     .custom-card img {
-        width: 81%; /* Adjust size */
+        width: 72%; /* Adjust size */
         position: absolute;
         top: -40px; /* Move image above card */
         left: 50%;
@@ -301,13 +307,14 @@ p{
         justify-content: center;
     }
     iframe {
-        max-width: 100%;
+        width: 100%;
         /* height: auto; */
     }
     .grid {
         display: grid;
         /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
         gap: 10px;
+        
         padding: 20px;
     }
     .factbody {
@@ -380,6 +387,26 @@ p{
     .card{
         font-size: 19px;
         padding: 5px;
+    }
+    .button-container .becomebtn{
+        width: 410px !important;
+        font-size: 18px;
+    }
+    .button-container .forthisbecomebtn{
+        width: 374px !important;
+        font-size: 18px;
+    }
+     .faq-container {
+        max-width: 800px;
+        margin: auto;
+        padding: 50px 20px;
+    }
+    .accordion-button {
+        font-weight: bold;
+        font-size: 19px;
+    }
+    .accordion-body{
+        font-size: 19px;
     }
     
     
