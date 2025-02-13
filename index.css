@@ -1,3 +1,7 @@
+*{
+   font-family: "IBM Plex Sans", Sans-serif;
+}
+
 .background{
     background-image: url("../Images/bg.jpg");
     background-repeat: no-repeat;
@@ -39,10 +43,13 @@ body{
     /* left: -50%; */
     width: 25px;
     height: 85%;
-    background: linear-gradient(0deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+    /* background: linear-gradient(0deg, transparent, rgba(255, 255, 255, 0.5), transparent); */
     transition: 0.1s;
     /* transform: rotate(20deg); */
-    animation: shine 1s infinite linear;
+    /* animation: shine 2s infinite linear;
+    animation-delay: 5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; */
 }
 
 @keyframes shine {
@@ -148,7 +155,9 @@ p{
 }
 
 
-
+.carousel-control-prev{
+    color: black !important;
+}
 /* Hover Effect */
 .card:hover {
     background: rgba(255, 255, 255, 0.3);
@@ -289,10 +298,7 @@ p{
         padding: 10px;
         /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); */
     }
-    .background {
-        /* background: #0e0e0e; */
-        padding: 20px;
-    }
+   
     h1, h2, h3 {
         font-size: clamp(1rem, 2vw, 2rem); /* Responsive font sizes */
         text-align: center;
@@ -363,7 +369,7 @@ p{
     }
     .question-box {
         display: flex;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         align-items: center;
         background-color: #fff8e5;
         padding: 3px;
@@ -392,16 +398,20 @@ p{
         border-radius: 10px;
         margin-top: 10px;
     }
+    .checkedbutton button{
+        margin-top: 27px !important;
+    }
     .card{
         font-size: 19px;
         padding: 5px;
+        color: white;
     }
     .button-container .becomebtn{
         width: 410px !important;
         font-size: 18px;
     }
     .button-container .forthisbecomebtn{
-        width: 374px !important;
+        width: 274px !important;
         font-size: 18px;
     }
      .faq-container {
@@ -415,6 +425,11 @@ p{
     }
     .accordion-body{
         font-size: 19px;
+    }
+    .accordion-item{
+        margin-bottom: 10%;
+        border-radius: 4px!important;
+        border: 2px solid whitesmoke;
     }
     .testimonial-text p{
         text-align: justify;
