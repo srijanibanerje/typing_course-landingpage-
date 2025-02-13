@@ -1,5 +1,6 @@
 *{
    font-family: "IBM Plex Sans", Sans-serif;
+   
 }
 
 .background{
@@ -32,11 +33,18 @@ body{
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
-    box-shadow: 0px 4px 0px #a31e6e, 0px 6px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 6px 6px 2px #a31e6e, 6px 6px 3px #a31e6e;
 }
-.btn:hover {
+/* .btn:hover {
     background-color: #0056b3;
-}
+} */
+
+.btn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
 .btn::after {
     content: "";
     position: absolute;
@@ -62,7 +70,7 @@ body{
     }
 }
 .questioncontainer {
-    background-color: white;
+    background-color: rgb(249, 246, 246);
     padding: 20px 30px;
     border-radius: 10px;
     border: 2px solid #e4a950;
@@ -87,10 +95,10 @@ body{
 .questions {
     display: grid;
     /* grid-template-columns: 1fr 1fr; */
-    gap: 15px;
+    gap: 17px;
 }
 .question-box {
-    background-color: #fdf8dd;
+    /* background-color: #e2c315; */
     padding: 12px;
     border-radius: 8px;
     display: flex;
@@ -198,15 +206,17 @@ p{
     
 }
 .card_button{
+    /* height: 117px; */
     background: linear-gradient(45deg, #fe9863, #fd3293);
     border-radius: 10px;
-    padding: 15px;
-    font-size: 20px;
+    /* padding: 15px; */
+    font-size: 19.4px;
     font-weight: bold;
     transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
     cursor: pointer;
     color: white;
     margin-bottom: 10px;
+    
 }
 .card_button:hover {
     color: black;
@@ -372,7 +382,7 @@ p{
         display: flex;
         /* flex-wrap: wrap; */
         align-items: center;
-        background-color: #fff8e5;
+        /* background-color: #fff8e5; */
         padding: 3px;
         border-radius: 5px;
         margin-bottom: 8px;
@@ -404,8 +414,9 @@ p{
     }
     .card{
         font-size: 19px;
-        padding: 5px;
+        /* padding: 5px; */
         color: white;
+        height: 130px;
     }
     .button-container .becomebtn{
         width: 410px !important;
@@ -453,4 +464,60 @@ p{
 
     
     
+}
+
+/* card */
+.custom-card2 {
+    display: flex;
+    align-items: center;
+    background-color: #322d2d; /* Dark background */
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.icon-box {
+    background-color: #dcdcdc;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+}
+
+.icon-box img {
+    width: 40px;
+    height: 40px;
+}
+
+.card-text {
+    margin-left: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .custom-card {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .icon-box {
+        width: 50px;
+        height: 50px;
+    }
+
+    .icon-box img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
 }
