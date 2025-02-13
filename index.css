@@ -32,6 +32,7 @@ body{
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
+    box-shadow: 0px 4px 0px #a31e6e, 0px 6px 10px rgba(0, 0, 0, 0.2);
 }
 .btn:hover {
     background-color: #0056b3;
@@ -150,7 +151,7 @@ p{
     padding: 15px;
     font-size: 20px;
     font-weight: bold;
-    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+    /* transition: transform 0.3s ease-in-out, background 0.3s ease-in-out; */
     cursor: pointer;
 }
 
@@ -159,10 +160,10 @@ p{
     color: black !important;
 }
 /* Hover Effect */
-.card:hover {
+/* .card:hover {
     background: rgba(255, 255, 255, 0.3);
     transform: scale(1.05);
-}
+} */
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -428,7 +429,7 @@ p{
     }
     .accordion-item{
         margin-bottom: 10%;
-        border-radius: 4px!important;
+        /* border-radius: 10px 10px 10px 10px !important; */
         border: 2px solid whitesmoke;
     }
     .testimonial-text p{
@@ -437,6 +438,19 @@ p{
     .video-wrapper iframe{
         height: 285px;
     }
+    .carousel-control-prev, 
+.carousel-control-next {
+    opacity: 1 !important; /* Keeps buttons visible at all times */
+}
+.icongetin{
+    font-size: 25px;
+}
+.carousel-control-prev:hover, 
+.carousel-control-next:hover {
+    opacity: 1 !important; /* Prevents opacity change on hover */
+    background-color: transparent !important; /* Removes any hover background */
+}
+
     
     
 }
