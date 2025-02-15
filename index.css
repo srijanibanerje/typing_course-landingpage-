@@ -499,6 +499,9 @@ p{
     font-size: 1rem;
     font-weight: 500;
 }
+.btn-custom{
+    
+}
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
@@ -557,5 +560,8 @@ p{
     }
     
 }
+/* carousel
+ */
+
 
 
