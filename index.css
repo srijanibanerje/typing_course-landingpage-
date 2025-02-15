@@ -416,7 +416,7 @@ p{
         font-size: 19px;
         /* padding: 5px; */
         color: white;
-        height: 130px;
+        /* height: 130px; */
     }
     .button-container .becomebtn{
         width: 410px !important;
@@ -542,6 +542,12 @@ p{
     .price {
         font-size: 20px;
         font-weight: 600;
+        
+    }
+    .pricecard{
+        font-size: 20px;
+        font-weight: 600;
+        box-shadow: 6px 6px 2px #c5b721, 6px 6px 3px #f7d829;
     }
     
     .enroll-btn {
