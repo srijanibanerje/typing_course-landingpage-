@@ -561,7 +561,17 @@ p{
     
 }
 /* carousel
+
  */
+.carousel-item{
+    max-height: 395px; 
+}
+.shadowimg {
+    width: 100%; /* Make all images the same width */
+    height: 162px; /* Set a fixed height for images */
+    object-fit: contain; /* Ensures the image maintains aspect ratio */
+    border-radius: 12px;
+}
 
 
 
